@@ -1,0 +1,16 @@
+<section class="feed__tag">
+<h4>Viewing: {{tags}}</h4>
+</section>
+<section class="feed">
+	<article ng-repeat="photo in photos.items">
+		<div class="photo__image" style="background-image: url({{photo.media.m}})" ng-click="viewPhoto($index)"></div>
+		<div class="feed__info">
+			<h2 ng-bind="photo.title"></h2>
+			<ul class="photo__meta">
+				<a href="https://www.flickr.com/people/{{photo.author_id}}/"><div flickravatar data-author="photo.author_id"></div>Post Author</a>
+				<p class="photo--published">Published <span timesince data-published="{{photo}}"></span></p>
+				<a ng-href="{{photo.link}}">View on Flickr</a>
+			</ul>
+		</div>
+	</article>
+</section>

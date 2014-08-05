@@ -1,0 +1,19 @@
+$white : #FFF;
+$offWhite : #F0F1F1;
+$metal : #A4A4A4;
+$green: #2ecc71;
+$blueIce : #90CDDC;
+
+$tablet: new-breakpoint(max-width 860px 6);
+$mobile: new-breakpoint(max-width 480px 4);
+
+body {
+	background: $offWhite;
+	color: $metal;
+}
+
+.container {
+	clear: both;
+	@include outer-container;
+}
+

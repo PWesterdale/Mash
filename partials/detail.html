@@ -1,0 +1,30 @@
+<section class="photo__detail">
+	<article>
+		<header>
+			<div class="photo__title">
+				<a class="photo__detail__title" ng-href="{{photo.link}}">
+					<h2 ng-bind="photo.title"></h2>
+				</a>
+				<a class="photo__detail__back" ng-click="goBack()" href="#">&laquo; Back</a>
+			</div>
+			<div class="photo__meta">
+				<a href="https://www.flickr.com/people/{{photo.author_id}}/">Post Author</a>
+				<p>Published <span timesince data-published="{{photo}}"></span></p>
+			</div>
+		</header>
+		<img ng-src="{{photo.media.m}}" />
+		<div class="photo__details">
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet pellentesque quam. Morbi rhoncus quam ut lacus mattis aliquam. Ut ac laoreet erat, ac dapibus erat. Quisque cursus purus et lobortis scelerisque. Phasellus volutpat nunc felis, sit amet aliquet mi sodales in. Sed condimentum neque ante, ut egestas lorem tempor a. Sed dui enim, porttitor id posuere quis, varius a odio. Nunc non euismod magna. Sed quis orci augue. Nulla lacinia ipsum mauris, ut fringilla nulla rhoncus ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur euismod metus arcu.
+			</p>
+			<p>
+			Ut non gravida velit. Duis eu vestibulum tortor. Pellentesque neque dolor, mollis non dapibus at, dapibus a ligula. Sed tempor eros quis venenatis feugiat. Phasellus a mattis nunc. Proin orci massa, varius et pharetra iaculis, vulputate nec velit. Nam cursus, nunc at blandit imperdiet, eros enim mollis sem, sit amet aliquet felis nunc sed quam. Sed porta aliquam venenatis. Nulla bibendum quam sit amet metus porttitor tincidunt. Maecenas ornare neque mi, id mattis nisi feugiat eget. Aliquam enim velit, tincidunt sed molestie ut, pellentesque sed est.</p>
+			<nav>
+				<h4>Tags:</h4>
+				<ul class="tags">
+					<li ng-click="viewTag(tag)" ng-repeat="tag in photo.tags">{{tag}}</li>
+				</ul>
+			</nav>
+		</div>
+	</article>
+</section>

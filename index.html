@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="mash" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="mash" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="mash" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="mash" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>potato - mash</title>
+	<meta name="description" content="Flickr feed display">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/assets/css/app.css"/>
+	<script type="text/javascript" src="//use.typekit.net/sqg2tmv.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+	<!--[if lt IE 7]>
+	   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<header class="site">
+		<h1 class="logo">Mash</h1>
+		<h4>A programming test for <a href="http://p.ota.to">Potato</a></h4>
+	</header>
+
+	<div class="container" ng-view></div>
+
+	<!-- In production use:
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+	-->
+	<script src="bower_components/moment/min/moment.min.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="/assets/js/md5.js"></script>
+	<script src="/assets/js/app.js"></script>
+	<script src="/assets/js/services.js"></script>
+	<script src="/assets/js/controllers.js"></script>
+	<script src="/assets/js/filters.js"></script>
+	<script src="/assets/js/directives.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+@import "bourbon/bourbon";
+
+$visual-grid: false;
+$visual-grid-color: #CECECE;
+$visual-grid-opacity: 0.2;
+$max-width: em(1088, 16);
+
+@import "neat/neat";
+
+@import 'core/reset',
+		'core/global',
+		'core/typography',
+		'block/header',
+		'block/feed',
+		'block/detail';

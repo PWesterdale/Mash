@@ -1,0 +1,13 @@
+header.site {
+	margin-top: 6.0rem;
+	h1, h4 {
+		text-align: center;
+	}
+	h1 {
+		color: darken($metal, 6%);
+	}
+	h4 {
+		color: lighten($metal, 8%);
+		font-size: 1.4rem;
+	}
+}
