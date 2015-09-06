@@ -4,7 +4,7 @@ $metal : #A4A4A4;
 $green: #2ecc71;
 $blueIce : #90CDDC;
 
-$tablet: new-breakpoint(max-width 860px 6);
+$tablet: new-breakpoint(max-width 800px 6);
 $mobile: new-breakpoint(max-width 480px 4);
 
 body {

@@ -7,7 +7,7 @@
 		<div class="feed__info">
 			<h2 ng-bind="photo.title"></h2>
 			<ul class="photo__meta">
-				<a href="https://www.flickr.com/people/{{photo.author_id}}/"><div flickravatar data-author="photo.author_id"></div>Post Author</a>
+				<a href="https://www.flickr.com/people/{{photo.author_id}}/"><span flickravatar data-author="photo.author_id"></span>Post Author</a>
 				<p class="photo--published">Published <span timesince data-published="{{photo}}"></span></p>
 				<a ng-href="{{photo.link}}">View on Flickr</a>
 			</ul>

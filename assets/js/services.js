@@ -63,6 +63,9 @@ angular.module('mash.services', [])
 
 			$http.jsonp(endPoint, {params : params})
 				.success(function(data, status){
+					for(var x in data.items){
+						var author = data.items[x].author.match(/\(([^)]*)\)/)[0];
+					}
 					self.photos = data;
 					cb(null, data);
 				})

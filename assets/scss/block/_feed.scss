@@ -3,7 +3,8 @@
 	@include span-columns(12);
 	margin-top: 4.0rem;
 
-	@include media($tablet){
+	@include media($tablet)
+	{
 		@include span-columns(6);
 		article {
 			.photo__image {
@@ -11,6 +12,19 @@
 			}
 			.feed__info {
 				@include span-columns(5 of 6);
+			}
+			.photo__meta {
+				display: -webkit-inline-flex;
+				display: inline-flex;
+				-webkit-flex-direction: row;
+				flex-direction:         row;
+				list-style-type: none;
+				-webkit-flex-wrap: wrap;
+				flex-wrap: wrap;
+			}
+			.photo__meta p {
+				order : -1;
+  				width: 100%;
 			}
 		}
 	}
@@ -23,7 +37,7 @@
 		position: relative;
 		.photo__image {
 			@include span-columns(3 of 12);
-			height: 14.5rem;
+			height: 18.5rem;
 			background-repeat: none;
 			background-size: cover;
 			background-position: 50% 50%;
@@ -31,7 +45,13 @@
 		}
 		.feed__info {
 			@include span-columns(9 of 12);
-			padding: 2.0rem 0 0 0;
+			padding: 2.0rem 2.0rem 0 0;
+			h2 {
+				width: 100%;
+				white-space: nowrap;
+	  			overflow: hidden;
+	  			text-overflow: ellipsis;
+			}
 		}
 		.photo__meta {
 			position: absolute;

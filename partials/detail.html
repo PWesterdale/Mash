@@ -8,13 +8,12 @@
 				<a class="photo__detail__back" ng-click="goBack()" href="#">&laquo; Back</a>
 			</div>
 			<div class="photo__meta">
-				<a href="https://www.flickr.com/people/{{photo.author_id}}/">Post Author</a>
+				<a href="https://www.flickr.com/people/{{photo.author_id}}/"><span flickravatar data-author="photo.author_id"></span>Post Author</a>
 				<p>Published <span timesince data-published="{{photo}}"></span></p>
 			</div>
 		</header>
 		<img ng-src="{{photo.media.m}}" />
 		<div class="photo__details">
-
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet pellentesque quam. Morbi rhoncus quam ut lacus mattis aliquam. Ut ac laoreet erat, ac dapibus erat. Quisque cursus purus et lobortis scelerisque. Phasellus volutpat nunc felis, sit amet aliquet mi sodales in. Sed condimentum neque ante, ut egestas lorem tempor a. Sed dui enim, porttitor id posuere quis, varius a odio. Nunc non euismod magna. Sed quis orci augue. Nulla lacinia ipsum mauris, ut fringilla nulla rhoncus ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur euismod metus arcu.
 			</p>
 			<p>

@@ -22,12 +22,14 @@ angular.module('mash.directives', [])
 		link: function(scope, element, attrs) {
 			if (attrs.author) {
 				scope.$watch(attrs.author, function (newVal) {
-					console.log("url('http://www.flickr.com/buddyicons/" + newVal + ".jpg')");
 					element.css({
 						width: '26px',
 						height: '26px',
 						display: 'inline-block',
-						'background': "url('http://www.flickr.com/buddyicons/" + newVal + ".jpg')"
+						'margin-right' : '10px',
+						'border-radius': '13px',
+						'background': "url('http://www.flickr.com/buddyicons/" + newVal + ".jpg') 50% 50%",
+						'vertical-align' : 'middle'
 					});
 				});
 			}

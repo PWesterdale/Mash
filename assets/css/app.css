@@ -52,12 +52,12 @@ table {
   border-spacing: 0; }
 
 body {
-  background: #f0f1f1;
-  color: #a4a4a4; }
+  background: #F0F1F1;
+  color: #A4A4A4; }
 
 .container {
   clear: both;
-  max-width: 68em;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto; }
   .container:after {
@@ -98,9 +98,9 @@ body {
 
 a {
   text-decoration: none;
-  color: #90cddc; }
+  color: #90CDDC; }
   a:visited {
-    color: #90cddc; }
+    color: #90CDDC; }
 
 header.site {
   margin-top: 6.0rem; }
@@ -120,7 +120,7 @@ header.site {
   margin-top: 4.0rem; }
   .feed:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 860px) {
+  @media screen and (max-width: 800px) {
     .feed {
       float: left;
       display: block;
@@ -141,10 +141,21 @@ header.site {
         margin-right: 4.82916%;
         width: 82.52847%; }
         .feed article .feed__info:last-child {
-          margin-right: 0; } }
+          margin-right: 0; }
+      .feed article .photo__meta {
+        display: -webkit-inline-flex;
+        display: inline-flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        list-style-type: none;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap; }
+      .feed article .photo__meta p {
+        order: -1;
+        width: 100%; } }
   .feed article {
     overflow: hidden;
-    background: white;
+    background: #FFF;
     display: block;
     margin-bottom: 3.0rem;
     position: relative; }
@@ -157,7 +168,7 @@ header.site {
       display: block;
       margin-right: 2.35765%;
       width: 23.23176%;
-      height: 14.5rem;
+      height: 18.5rem;
       background-repeat: none;
       background-size: cover;
       background-position: 50% 50%;
@@ -169,9 +180,14 @@ header.site {
       display: block;
       margin-right: 2.35765%;
       width: 74.41059%;
-      padding: 2.0rem 0 0 0; }
+      padding: 2rem 2rem 0 0; }
       .feed article .feed__info:last-child {
         margin-right: 0; }
+      .feed article .feed__info h2 {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
     .feed article .photo__meta {
       position: absolute;
       bottom: 10px; }
@@ -187,7 +203,7 @@ header.site {
 section.photo__detail {
   margin: 4.0rem 0; }
   section.photo__detail article {
-    background: white;
+    background: #FFF;
     display: block; }
     section.photo__detail article:after {
       content: "";
@@ -236,14 +252,14 @@ section.photo__detail {
       margin-right: 2.35765%;
       width: 74.41059%;
       color: #c3c3c3;
-      padding: 0 2.0rem 0 0; }
+      padding: 0 2rem 0 0; }
       section.photo__detail article .photo__details:last-child {
         margin-right: 0; }
     section.photo__detail article .photo__details nav {
       margin: 1.0rem 0;
       padding-top: 1.0rem; }
       section.photo__detail article .photo__details nav h4 {
-        color: #a4a4a4;
+        color: #A4A4A4;
         display: inline-block;
         margin-right: 1.0rem; }
       section.photo__detail article .photo__details nav ul, section.photo__detail article .photo__details nav li {
@@ -251,10 +267,10 @@ section.photo__detail {
       section.photo__detail article .photo__details nav li {
         text-transform: uppercase;
         font-family: 'brandon-grotesque';
-        margin: 0 1.0rem 1.0rem 0;
+        margin: 0 1rem 1rem 0;
         background: #2ecc71;
-        color: white;
-        padding: 0.6rem 1.0rem;
+        color: #FFF;
+        padding: 0.6rem 1rem;
         font-size: 1.2rem;
         cursor: pointer; }
     section.photo__detail article .photo__meta {
@@ -263,7 +279,7 @@ section.photo__detail {
       display: inline-block;
       padding-right: 1.0rem;
       margin-right: 1.0rem;
-      border-right: 1px solid #a4a4a4; }
+      border-right: 1px solid #A4A4A4; }
     section.photo__detail article .photo__meta p:last-child {
       margin-right: 0;
       padding-right: 0;
