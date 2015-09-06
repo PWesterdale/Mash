@@ -1,0 +1,22 @@
+{
+  "name": "potato",
+  "version": "0.1.0",
+  "authors": [
+    "Paul Westerdale <paul@westerdale.me>"
+  ],
+  "description": "Test application for potato",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.2.21",
+    "angular": "~1.2.21",
+    "moment": "~2.8.1"
+  }
+}
